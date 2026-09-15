@@ -1,0 +1,380 @@
+{
+  "worlds": [
+    {
+      "id": 1,
+      "title": "SHADOW OF FAME",
+      "parts": [
+        1,
+        20
+      ]
+    },
+    {
+      "id": 2,
+      "title": "RESCUE WAR",
+      "parts": [
+        21,
+        40
+      ]
+    },
+    {
+      "id": 3,
+      "title": "WAR GATE",
+      "parts": [
+        41,
+        50
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "id": 1,
+      "title": "THE FALL",
+      "chapter": 1,
+      "act": 1,
+      "world": 1
+    },
+    {
+      "id": 2,
+      "title": "THE WATCHER",
+      "chapter": 1,
+      "act": 1,
+      "world": 1
+    },
+    {
+      "id": 3,
+      "title": "ECHOES",
+      "chapter": 1,
+      "act": 1,
+      "world": 1
+    },
+    {
+      "id": 4,
+      "title": "LEFT BEHIND",
+      "chapter": 1,
+      "act": 1,
+      "world": 1
+    },
+    {
+      "id": 5,
+      "title": "CONTROLLED",
+      "chapter": 1,
+      "act": 1,
+      "world": 1
+    },
+    {
+      "id": 6,
+      "title": "VANISHED",
+      "chapter": 2,
+      "act": 1,
+      "world": 1
+    },
+    {
+      "id": 7,
+      "title": "REWRITE",
+      "chapter": 2,
+      "act": 1,
+      "world": 1
+    },
+    {
+      "id": 8,
+      "title": "FRAGMENTS",
+      "chapter": 2,
+      "act": 1,
+      "world": 1
+    },
+    {
+      "id": 9,
+      "title": "BREAKPOINT",
+      "chapter": 2,
+      "act": 1,
+      "world": 1
+    },
+    {
+      "id": 10,
+      "title": "ERASURE",
+      "chapter": 2,
+      "act": 1,
+      "world": 1
+    },
+    {
+      "id": 11,
+      "title": "AFTERIMAGE",
+      "chapter": 3,
+      "act": 2,
+      "world": 1
+    },
+    {
+      "id": 12,
+      "title": "AROWH",
+      "chapter": 3,
+      "act": 2,
+      "world": 1
+    },
+    {
+      "id": 13,
+      "title": "FRACTURE",
+      "chapter": 3,
+      "act": 2,
+      "world": 1
+    },
+    {
+      "id": 14,
+      "title": "RECOVERY",
+      "chapter": 3,
+      "act": 2,
+      "world": 1
+    },
+    {
+      "id": 15,
+      "title": "TIMING",
+      "chapter": 3,
+      "act": 2,
+      "world": 1
+    },
+    {
+      "id": 16,
+      "title": "THE HOODED ONE",
+      "chapter": 4,
+      "act": 2,
+      "world": 1
+    },
+    {
+      "id": 17,
+      "title": "THE FOOTPRINT",
+      "chapter": 4,
+      "act": 2,
+      "world": 1
+    },
+    {
+      "id": 18,
+      "title": "SPLIT HORN",
+      "chapter": 4,
+      "act": 2,
+      "world": 1
+    },
+    {
+      "id": 19,
+      "title": "THE NAME AT THE EDGE",
+      "chapter": 4,
+      "act": 2,
+      "world": 1
+    },
+    {
+      "id": 20,
+      "title": "TOO LATE",
+      "chapter": 4,
+      "act": 2,
+      "world": 1
+    },
+    {
+      "id": 21,
+      "title": "ASH CAMP",
+      "chapter": 5,
+      "act": 3,
+      "world": 2
+    },
+    {
+      "id": 22,
+      "title": "ZEPH",
+      "chapter": 5,
+      "act": 3,
+      "world": 2
+    },
+    {
+      "id": 23,
+      "title": "GLASS HOLLOW",
+      "chapter": 5,
+      "act": 3,
+      "world": 2
+    },
+    {
+      "id": 24,
+      "title": "KNIGHT'S TABLE",
+      "chapter": 5,
+      "act": 3,
+      "world": 2
+    },
+    {
+      "id": 25,
+      "title": "BRIDGE OF ASH",
+      "chapter": 5,
+      "act": 3,
+      "world": 2
+    },
+    {
+      "id": 26,
+      "title": "THE RETURN OF TWELVE",
+      "chapter": 6,
+      "act": 3,
+      "world": 2
+    },
+    {
+      "id": 27,
+      "title": "WHAT TWELVE TAUGHT",
+      "chapter": 6,
+      "act": 3,
+      "world": 2
+    },
+    {
+      "id": 28,
+      "title": "VARKUL'S WEATHER",
+      "chapter": 6,
+      "act": 3,
+      "world": 2
+    },
+    {
+      "id": 29,
+      "title": "BREAKING ELEVEN",
+      "chapter": 6,
+      "act": 3,
+      "world": 2
+    },
+    {
+      "id": 30,
+      "title": "THE NAME IN THE MED LEDGER",
+      "chapter": 6,
+      "act": 3,
+      "world": 2
+    },
+    {
+      "id": 31,
+      "title": "THE ROAD THAT CUTS BACK",
+      "chapter": 7,
+      "act": 4,
+      "world": 2
+    },
+    {
+      "id": 32,
+      "title": "NO.4 RIVEN / NO.10 ZEIGRAN",
+      "chapter": 7,
+      "act": 4,
+      "world": 2
+    },
+    {
+      "id": 33,
+      "title": "THE GIRL CALLED O.O",
+      "chapter": 7,
+      "act": 4,
+      "world": 2
+    },
+    {
+      "id": 34,
+      "title": "NINE EATS ROADS",
+      "chapter": 7,
+      "act": 4,
+      "world": 2
+    },
+    {
+      "id": 35,
+      "title": "MED TRANSFER",
+      "chapter": 7,
+      "act": 4,
+      "world": 2
+    },
+    {
+      "id": 36,
+      "title": "EIGHT BREAKS, CAMP HOLDS",
+      "chapter": 8,
+      "act": 4,
+      "world": 2
+    },
+    {
+      "id": 37,
+      "title": "JUNO HUNTS",
+      "chapter": 8,
+      "act": 4,
+      "world": 2
+    },
+    {
+      "id": 38,
+      "title": "SEVEN DOWN",
+      "chapter": 8,
+      "act": 4,
+      "world": 2
+    },
+    {
+      "id": 39,
+      "title": "SIX STARVES",
+      "chapter": 8,
+      "act": 4,
+      "world": 2
+    },
+    {
+      "id": 40,
+      "title": "THE SECOND TABLE",
+      "chapter": 8,
+      "act": 4,
+      "world": 2
+    },
+    {
+      "id": 41,
+      "title": "SILENCE MARKET",
+      "chapter": 9,
+      "act": 5,
+      "world": 3
+    },
+    {
+      "id": 42,
+      "title": "FIVE FALLS QUIETLY",
+      "chapter": 9,
+      "act": 5,
+      "world": 3
+    },
+    {
+      "id": 43,
+      "title": "FORTRESS DISCIPLINE",
+      "chapter": 9,
+      "act": 5,
+      "world": 3
+    },
+    {
+      "id": 44,
+      "title": "FOUR BREAKS OPEN",
+      "chapter": 9,
+      "act": 5,
+      "world": 3
+    },
+    {
+      "id": 45,
+      "title": "THE SEAT TURNS",
+      "chapter": 9,
+      "act": 5,
+      "world": 3
+    },
+    {
+      "id": 46,
+      "title": "THREE WANTS COMMAND",
+      "chapter": 10,
+      "act": 5,
+      "world": 3
+    },
+    {
+      "id": 47,
+      "title": "WE CHOOSE THE LINE",
+      "chapter": 10,
+      "act": 5,
+      "world": 3
+    },
+    {
+      "id": 48,
+      "title": "XOLLONOX",
+      "chapter": 10,
+      "act": 5,
+      "world": 3
+    },
+    {
+      "id": 49,
+      "title": "TWO FORGETS US",
+      "chapter": 10,
+      "act": 5,
+      "world": 3
+    },
+    {
+      "id": 50,
+      "title": "CROWN",
+      "chapter": 10,
+      "act": 5,
+      "world": 3
+    }
+  ]
+}

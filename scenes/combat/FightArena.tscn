@@ -1,0 +1,212 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/combat/fight_arena.gd" id="1_arena"]
+
+[sub_resource type="Environment" id="Environment_arena"]
+background_mode = 1
+background_color = Color(0.063, 0.043, 0.09, 1)
+ambient_light_source = 3
+ambient_light_color = Color(0.31, 0.26, 0.41, 1)
+ambient_light_energy = 0.62
+tonemap_mode = 2
+
+[sub_resource type="BoxShape3D" id="BoxShape_floor"]
+size = Vector3(28, 0.4, 8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_floor"]
+size = Vector3(28, 0.4, 8)
+
+[sub_resource type="StandardMaterial3D" id="Material_floor"]
+albedo_color = Color(0.09, 0.067, 0.122, 1)
+metallic = 0.25
+roughness = 0.72
+
+[sub_resource type="StandardMaterial3D" id="Material_backdrop"]
+albedo_color = Color(0.15, 0.09, 0.18, 1)
+emission_enabled = true
+emission = Color(0.31, 0.09, 0.23, 1)
+emission_energy_multiplier = 0.6
+
+[node name="FightArena" type="Node3D"]
+script = ExtResource("1_arena")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_arena")
+
+[node name="KeyLight" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-55, -20, 0)
+light_energy = 2.0
+shadow_enabled = true
+
+[node name="FillLight" type="OmniLight3D" parent="."]
+position = Vector3(0, 4, 2)
+light_color = Color(0.79, 0.55, 0.14, 1)
+light_energy = 3.0
+omni_range = 18.0
+
+[node name="Camera3D" type="Camera3D" parent="."]
+position = Vector3(0, 4.2, 13.5)
+rotation_degrees = Vector3(-11, 0, 0)
+fov = 48.0
+current = true
+
+[node name="ArenaFloor" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ArenaFloor"]
+position = Vector3(0, -0.2, 0)
+shape = SubResource("BoxShape_floor")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ArenaFloor"]
+position = Vector3(0, -0.2, 0)
+mesh = SubResource("BoxMesh_floor")
+material_override = SubResource("Material_floor")
+
+[node name="BackdropLeft" type="MeshInstance3D" parent="."]
+position = Vector3(-9, 2.5, -3)
+scale = Vector3(0.5, 5, 0.5)
+mesh = SubResource("BoxMesh_floor")
+material_override = SubResource("Material_backdrop")
+
+[node name="BackdropRight" type="MeshInstance3D" parent="."]
+position = Vector3(9, 2.5, -3)
+scale = Vector3(0.5, 5, 0.5)
+mesh = SubResource("BoxMesh_floor")
+material_override = SubResource("Material_backdrop")
+
+[node name="Fighters" type="Node3D" parent="."]
+unique_name_in_owner = true
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="Root" type="Control" parent="HUD"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PlayerLabel" type="Label" parent="HUD/Root"]
+offset_left = 40.0
+offset_top = 10.0
+offset_right = 240.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 22
+text = "CHUG"
+
+[node name="EnemyLabel" type="Label" parent="HUD/Root"]
+unique_name_in_owner = true
+offset_left = 810.0
+offset_top = 10.0
+offset_right = 1040.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 22
+text = "ENEMY"
+
+[node name="PlayerHP" type="ProgressBar" parent="HUD/Root"]
+unique_name_in_owner = true
+offset_left = 40.0
+offset_top = 38.0
+offset_right = 470.0
+offset_bottom = 64.0
+show_percentage = false
+
+[node name="EnemyHP" type="ProgressBar" parent="HUD/Root"]
+unique_name_in_owner = true
+offset_left = 810.0
+offset_top = 38.0
+offset_right = 1240.0
+offset_bottom = 64.0
+show_percentage = false
+
+[node name="StaminaBar" type="ProgressBar" parent="HUD/Root"]
+unique_name_in_owner = true
+offset_left = 40.0
+offset_top = 72.0
+offset_right = 340.0
+offset_bottom = 86.0
+show_percentage = false
+
+[node name="RageBar" type="ProgressBar" parent="HUD/Root"]
+unique_name_in_owner = true
+offset_left = 40.0
+offset_top = 94.0
+offset_right = 340.0
+offset_bottom = 108.0
+show_percentage = false
+
+[node name="RoundLabel" type="Label" parent="HUD/Root"]
+unique_name_in_owner = true
+offset_left = 560.0
+offset_top = 18.0
+offset_right = 720.0
+offset_bottom = 58.0
+theme_override_font_sizes/font_size = 26
+text = "ROUND 1"
+horizontal_alignment = 1
+
+[node name="MessageLabel" type="Label" parent="HUD/Root"]
+unique_name_in_owner = true
+offset_left = 390.0
+offset_top = 600.0
+offset_right = 890.0
+offset_bottom = 670.0
+theme_override_font_sizes/font_size = 26
+horizontal_alignment = 1
+
+[node name="ControlsHint" type="Label" parent="HUD/Root"]
+offset_left = 350.0
+offset_top = 680.0
+offset_right = 950.0
+offset_bottom = 710.0
+modulate = Color(1, 1, 1, 0.65)
+text = "A/D Move   W/Space Jump   J Light   K Heavy   R Rage"
+horizontal_alignment = 1
+
+[node name="LeftButton" type="Button" parent="HUD/Root"]
+unique_name_in_owner = true
+offset_left = 38.0
+offset_top = 570.0
+offset_right = 120.0
+offset_bottom = 632.0
+text = "<"
+
+[node name="RightButton" type="Button" parent="HUD/Root"]
+unique_name_in_owner = true
+offset_left = 126.0
+offset_top = 570.0
+offset_right = 208.0
+offset_bottom = 632.0
+text = ">"
+
+[node name="JumpButton" type="Button" parent="HUD/Root"]
+unique_name_in_owner = true
+offset_left = 214.0
+offset_top = 570.0
+offset_right = 296.0
+offset_bottom = 632.0
+text = "JUMP"
+
+[node name="LightButton" type="Button" parent="HUD/Root"]
+unique_name_in_owner = true
+offset_left = 890.0
+offset_top = 570.0
+offset_right = 972.0
+offset_bottom = 632.0
+text = "LIGHT"
+
+[node name="HeavyButton" type="Button" parent="HUD/Root"]
+unique_name_in_owner = true
+offset_left = 988.0
+offset_top = 570.0
+offset_right = 1070.0
+offset_bottom = 632.0
+text = "HEAVY"
+
+[node name="RageButton" type="Button" parent="HUD/Root"]
+unique_name_in_owner = true
+offset_left = 1086.0
+offset_top = 570.0
+offset_right = 1168.0
+offset_bottom = 632.0
+text = "RAGE"

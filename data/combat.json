@@ -1,0 +1,218 @@
+{
+  "player": {
+    "hp": 150.0,
+    "speed": 7.5,
+    "damage": 10.0,
+    "defense": 0.0,
+    "stamina": 100.0,
+    "jump_speed": 10.5
+  },
+  "movement": {
+    "gravity": 24.0,
+    "arena_half_width": 12.5
+  },
+  "resources": {
+    "stamina_regen_per_second": 15.0,
+    "rage_gain_light": 9.0,
+    "rage_gain_heavy": 15.0,
+    "rage_gain_when_hit": 4.0
+  },
+  "attacks": {
+    "light": {
+      "stamina_cost": 8.0,
+      "duration": 0.34,
+      "hit_at_ratio": 0.44,
+      "range": 1.75,
+      "damage_multiplier": 1.0,
+      "knockback_x": 3.5,
+      "knockback_y": 1.2,
+      "hit_stun": 0.16
+    },
+    "heavy": {
+      "stamina_cost": 14.0,
+      "duration": 0.56,
+      "hit_at_ratio": 0.52,
+      "range": 2.25,
+      "damage_multiplier": 1.65,
+      "knockback_x": 6.5,
+      "knockback_y": 3.0,
+      "hit_stun": 0.3
+    }
+  },
+  "rage_tiers": {
+    "1": {
+      "name": "RAGE I",
+      "speed_multiplier": 1.24,
+      "damage_multiplier": 1.5,
+      "damage_taken_multiplier": 1.0,
+      "drain_per_second": 15.0,
+      "unlock_part": 1
+    },
+    "2": {
+      "name": "RAGE II",
+      "speed_multiplier": 1.34,
+      "damage_multiplier": 2.0,
+      "damage_taken_multiplier": 0.72,
+      "drain_per_second": 15.0,
+      "unlock_part": 41
+    },
+    "3": {
+      "name": "RAGE III",
+      "speed_multiplier": 1.46,
+      "damage_multiplier": 2.6,
+      "damage_taken_multiplier": 0.6,
+      "drain_per_second": 22.0,
+      "unlock_part": 50
+    }
+  },
+  "enemies": {
+    "1": {
+      "hp": 100.0,
+      "speed": 5.5,
+      "damage": 8.0,
+      "defense": 0.0,
+      "aggression": 0.38
+    },
+    "2": {
+      "hp": 120.0,
+      "speed": 7.5,
+      "damage": 12.0,
+      "defense": 0.0,
+      "aggression": 0.42
+    },
+    "3": {
+      "hp": 180.0,
+      "speed": 5.5,
+      "damage": 16.0,
+      "defense": 1.0,
+      "aggression": 0.44
+    },
+    "4": {
+      "hp": 110.0,
+      "speed": 8.5,
+      "damage": 10.0,
+      "defense": 0.0,
+      "aggression": 0.46
+    },
+    "5": {
+      "hp": 140.0,
+      "speed": 6.5,
+      "damage": 14.0,
+      "defense": 1.0,
+      "aggression": 0.47
+    },
+    "6": {
+      "hp": 200.0,
+      "speed": 7.5,
+      "damage": 15.0,
+      "defense": 2.0,
+      "aggression": 0.49
+    },
+    "7": {
+      "hp": 140.0,
+      "speed": 9.5,
+      "damage": 11.0,
+      "defense": 0.0,
+      "aggression": 0.52
+    },
+    "8": {
+      "hp": 200.0,
+      "speed": 7.5,
+      "damage": 17.0,
+      "defense": 2.0,
+      "aggression": 0.53
+    },
+    "9": {
+      "hp": 230.0,
+      "speed": 8.5,
+      "damage": 15.0,
+      "defense": 2.0,
+      "aggression": 0.55
+    },
+    "10": {
+      "hp": 260.0,
+      "speed": 4.5,
+      "damage": 22.0,
+      "defense": 3.0,
+      "aggression": 0.5
+    },
+    "11": {
+      "hp": 200.0,
+      "speed": 11.0,
+      "damage": 14.0,
+      "defense": 1.0,
+      "aggression": 0.58
+    },
+    "12": {
+      "hp": 175.0,
+      "speed": 10.0,
+      "damage": 13.0,
+      "defense": 1.0,
+      "aggression": 0.6
+    },
+    "13": {
+      "hp": 290.0,
+      "speed": 9.0,
+      "damage": 20.0,
+      "defense": 3.0,
+      "aggression": 0.61
+    },
+    "14": {
+      "hp": 320.0,
+      "speed": 12.0,
+      "damage": 18.0,
+      "defense": 3.0,
+      "aggression": 0.63
+    },
+    "15": {
+      "hp": 280.0,
+      "speed": 13.0,
+      "damage": 16.0,
+      "defense": 2.0,
+      "aggression": 0.65
+    },
+    "16": {
+      "hp": 160.0,
+      "speed": 12.0,
+      "damage": 13.0,
+      "defense": 1.0,
+      "aggression": 0.66
+    },
+    "17": {
+      "hp": 220.0,
+      "speed": 11.0,
+      "damage": 17.0,
+      "defense": 2.0,
+      "aggression": 0.67
+    },
+    "18": {
+      "hp": 340.0,
+      "speed": 13.0,
+      "damage": 19.0,
+      "defense": 4.0,
+      "aggression": 0.69
+    },
+    "19": {
+      "hp": 300.0,
+      "speed": 14.0,
+      "damage": 17.0,
+      "defense": 3.0,
+      "aggression": 0.7
+    },
+    "20": {
+      "hp": 420.0,
+      "speed": 15.0,
+      "damage": 22.0,
+      "defense": 5.0,
+      "aggression": 0.72
+    },
+    "21": {
+      "hp": 9999.0,
+      "speed": 7.0,
+      "damage": 35.0,
+      "defense": 50.0,
+      "aggression": 0.85,
+      "minimum_hp": 1.0
+    }
+  }
+}
